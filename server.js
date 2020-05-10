@@ -16,6 +16,7 @@ mongoose
   .catch((err) => console.log(err));
 
 app.use("/api/user", user);
+app.use("/api/auth", require("./routes/api/auth"));
 
 const port = 5000;
 
